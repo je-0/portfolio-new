@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        @@include('@@webRoot/__include/app-head.html',{ "title": "Main"
+        })
+    </head>
+
+    <body>
+        @@include('@@webRoot/__include/app-a11y.html')
+        <div class="app">
+            @@include('@@webRoot/__include/app-header.html')
+
+            <!-- app-container [s]-->
+            <div class="app-container">
+                <!-- app-content [s] -->
+                <!-- [D] 페이지 클래스 "pg-^" -->
+                <main class="app-content main" tabindex="-1">
+                    <!-- section -->
+                   <section class="section intro">
+                        <div class="section-tit js-motion-item">
+                            <h2> 
+                                <p class="moving-txt">
+                                    <span>성</span>
+                                    <span>장</span>
+                                    <span>하</span>
+                                    <span>는</span>
+                                    <span>퍼</span>
+                                    <span>블</span>
+                                    <span>리</span>
+                                    <span>셔</span> 
+                                </p>
+                                <p>
+                                    임제영입니다 
+                                </p>
+                            </h2>
+                        </div> 
+                        <div class="section-cont">
+                            <img src="@@webRoot/../resources/assets/images/main/bg-main.jpg" alt="">
+                        </div>  
+                   </section>
+                   <!-- section -->
+                   <section class="section skils-section js-motion-item">
+                        <div class="section-tit">
+                            <h2>
+                                주어진 업무를 책임감있게 
+                                <br>완수해 조직에 도움을 주고
+                                <br>성장하는 퍼블리셔
+                            </h2>
+                        </div> 
+                        <div class="section-cont">
+                            <div class="cont-tit">
+                                SKILL TREE
+                            </div>
+                            <ul class="cont-cont skils-list">
+                                <li>HTML5 DTD 문법 준수</li>
+                                <li>웹 접근성을 높인 Semantic Page 작성</li>
+                                <li>IR 기법을 이용한 스타일 작성</li>
+                                <li>화려한 CSS3 Animation 구현</li>
+                                <li>반응형 웹 페이지 스타일 작성</li>
+                                <li>모바일 페이지 스타일 작성</li>
+                                <li>CSS 전처리 기능 프로그래밍(SASS)</li>
+                                <li>JavaScript 플러그인 활용 및 구현(jQuery)</li>
+                                <li>Parallax 웹 페이지 구현</li>
+                                <li>외부 API 구현(Google Map, Carousel)</li>
+                                <li>비동기 데이터 처리(Ajax)</li>
+                                <li>VanillaJS 스크립팅</li>
+                                <li>GitHub를 이용한 Git 시스템 협업 가능</li>
+                            </ul>
+                        </div>  
+                   </section>
+                   <!-- section -->
+                    <section class="section career js-motion-item">
+                        <div class="section-tit">
+                            <h2>경력</h2>
+                        </div> 
+                        <div class="section-cont">
+                            <dl>
+                                <dt>제오젠</dt>
+                                <dd>퍼블리싱팀/ 주임</dd>
+                                <dd>웹/앱 사이트 구축 및 유지보수 </dd>
+                                <dd>2020.01.15 ~ 2023.03</dd>
+                            </dl>
+                        </div>  
+                    </section>
+                    <!-- section -->
+                   <section class="section project js-motion-item">
+                        <div class="section-tit">
+                            <h2>프로젝트</h2>
+                             <a href="@@webRoot/project/list.html" type="button" class="btn-more">
+                                더보기
+                             </a>
+                        </div>
+                        <div class="section-cont project-swiper">
+                            <ul class="swiper-wrapper">
+                                <li class="swiper-slide">
+                                    <p class="projcet-type">구축</p>
+                                    <p class="projcet-name">애터미 쇼핑몰 개편</p>
+                                    <p class="projcet-date">2022.01 ~ 2023.02</p>
+                                </li>
+                                <li class="swiper-slide">
+                                    <p class="projcet-type">구축</p>
+                                    <p class="projcet-name">현대글로비스 온라인 수출 플랫폼 구축</p>
+                                    <p class="projcet-date">2021.08 ~ 2022.01</p>
+                                </li>
+                                <li class="swiper-slide">
+                                    <p class="projcet-type">구축</p>
+                                    <p class="projcet-name">KB금융그룹(지주)의 디지털 아카이브 건</p>
+                                    <p class="projcet-date">2021.06 ~ 2021.08</p>
+                                </li>
+                                <li class="swiper-slide">
+                                    <p class="projcet-type">구축</p>
+                                    <p class="projcet-name">2021 서브원 리뉴얼</p>
+                                    <p class="projcet-date">2022.04 ~ 2021.06</p>
+                                </li>
+                            </ul>
+                            <div class="swiper-pagination"></div>
+                            <p class="msg-notice">
+                                * 해당 프로젝트는 최신순으로 보여집니다.
+                            </p>
+                        </div>  
+                   </section>
+                   <!-- section -->
+                   <section class="section people js-motion-item">
+                        <div class="section-cont">
+                            <ul>
+                                <li>
+                                    <dl class="img-tit">
+                                        <dt>성장하는 개발자</dt>
+                                        <dd> 
+                                            접근성, gulp.js 등, 트렌드에 걸맞는 코딩
+                                        </dd>
+                                    </dl>
+                                    <div class="img-box">
+                                        <img src="@@webRoot/../resources/assets/images/main/people-01.jpg" alt="">
+                                    </div>
+                                </li>
+                                <li>
+                                    <dl class="img-tit">
+                                        <dt>협력과 소통</dt>
+                                        <dd> 
+                                           사교적이고 활발한 성격으로 다른 작업자들과 원활하게 소통합니다.
+                                        </dd>
+                                    </dl>
+                                    <div class="img-box">
+                                        <img src="@@webRoot/../resources/assets/images/main/people-02.jpg" alt="">
+                                    </div>
+                                </li>
+                                <li>
+                                    <dl class="img-tit">
+                                        <dt>발전</dt>
+                                        <dd> 
+                                            지금의 모습의 안주하는것이 아닌 매일매일을 성장의 발판으로 행동합니다.
+                                        </dd>
+                                    </dl>
+                                    <div class="img-box">
+                                        <img src="@@webRoot/../resources/assets/images/main/people-03.jpg" alt="">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>  
+                   </section>
+                   <!--  -->
+                   <section class="section contact js-motion-item">
+                    <div class="section-tit">
+                        <h2>Contact us</h2>
+                    </div>
+                    <div class="section-cont">
+                        <ul>
+                            <li>
+                                <a href="https://open.kakao.com/o/sSBxaDTe" target="_blank">
+                                    <dl>
+                                        <dt>kakao</dt>
+                                        <dd>
+                                            카카오톡으로 연락하기
+                                        </dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:wpdud1080@naver.com">
+                                    <dl>
+                                        <dt>E-mail</dt>
+                                        <dd>이메일로 연락하기</dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/je-0/portfolio-new" target="_blank">
+                                    <dl>
+                                        <dt>GitHub</dt>
+                                        <dd>github 가기</dd>
+                                    </dl>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>  
+               </section>
+                </main>
+                <!-- app-content [e] -->
+            </div>
+            <!-- app-container [e]-->
+            @@include('@@webRoot/__include/app-footer.html')
+        </div>
+
+
+        @@include('@@webRoot/__include/common-js.html')
+
+        <!-- Add Library (this page only)-->
+        <script src="@@webRoot/../resources/assets/js/ui.js"></script>
+        <script>
+            // 
+            $(document).ready(function() {
+               $('.intro').addClass('is-on')
+            }); 
+            // swiper
+            var swiper = new Swiper(".project-swiper", {
+                slidesPerView: 3.2,
+                spaceBetween: 20,
+                pagination: {
+                    el: ".swiper-pagination",
+                    type: "progressbar",
+                },
+                breakpoints: {
+                    640 : {
+                        slidesPerView: 1.5,
+                        spaceBetween: 16,
+                    },
+                    1279 : {
+                        slidesPerView: 2.3,
+                        spaceBetween: 20,
+                    },
+                }
+            });
+
+        </script>
+    </body>
+</html>

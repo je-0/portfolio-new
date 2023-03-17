@@ -1,0 +1,28 @@
+/* Container */
+.app-container {
+    padding-top: 52px;
+    padding-bottom: 80px;
+    > .app-content {
+        min-height: calc(100vh - 138px);
+        padding: 0 15px;
+    }
+}
+
+@include tablet{
+    .app-container {
+        padding-top: 80px;
+        > .app-content {
+            min-height: auto;
+        }
+    }
+}
+
+@include pc{
+    .app-container {
+        padding-top: 100px;
+        > .app-content {
+            min-height: auto;
+            padding: 0 30px;
+        }
+    }
+}

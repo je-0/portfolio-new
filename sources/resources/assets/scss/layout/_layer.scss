@@ -1,0 +1,114 @@
+.layer-wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 0;
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0);
+        transition: background-color .2s;
+    }
+    &.is-active {
+        right: 0;
+        bottom: 0;
+        z-index: 10;
+        height: auto;
+        &::before{
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+    }
+    .layer {
+        display: none;
+        position: relative;
+        width: calc(100% - 40px);
+        border-radius: 8px;
+        background-color: #fff;
+        transition: top .2s .1s;
+        &.is-active {
+            display: block;
+        }
+        >.tit {
+            display: flex;
+            align-items: center;
+            padding: 20px 45px 15px 15px;
+            font-size: 2rem;
+            font-weight: 500;
+            line-height: 1.4;
+        }
+        .layer-cont {
+            padding: 0px 15px 20px;
+            dl{
+                border-top: 1px solid #ddd;
+                padding-top: 10px;
+                dt{
+                    font-size: 1.6rem;
+                    font-weight: 500;
+                    &+dd{
+                        margin-top: 10px;
+                        line-height: 1.3;
+                    }
+                }
+                dd{
+                    font-size: 1.4rem;
+                    color:#353535; 
+                    line-height: 1.4;
+                    &+dd{
+                        margin-top: 5px;
+                    }
+                }
+                &+dl{
+                    margin-top: 10px;
+                }
+            }
+            .btn-box{
+                margin-top: 20px;
+            }
+        }
+    }
+    .btn-layer-close {
+        position: absolute;
+        right: 20px;
+        top: 27px;
+        @include btn-close(16px, 2px, #000)
+    }
+}
+
+
+@include pc{
+    .layer-wrap {
+        .layer{
+            width: 500px;
+            .layer-cont {
+                dl{
+                    dt{
+                        font-size: 1.8rem;
+                        &+dd{
+                            margin-top: 14px;
+                            line-height: 1.3;
+                        }
+                    }
+                    dd{
+                        font-size: 1.5rem;
+                        &+dd{
+                            margin-top: 8px;
+                        }
+                    }
+                    &+dl{
+                        margin-top: 14px;
+                    }
+                }
+                .btn-box{
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
+}

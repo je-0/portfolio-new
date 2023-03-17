@@ -1,0 +1,30 @@
+.app-footer{
+	padding:20px 15px;
+	text-align: center;
+	background-color: #efefef;
+	.btn-top{
+		opacity: 0;
+		transition: all 0.4s ease-in;
+		position: fixed;
+		width: 50px;
+		height: 50px;
+		bottom: 20px;
+		right: 20px;
+		border-radius: 50%;
+		border:1px solid #BB2649;
+		font-size: 1.4rem;
+		color:#000;
+		font-weight: 500;
+		padding: 10px 0;
+		z-index: 10;
+		background-color: #fff;
+		&.is-active{
+			opacity: 1;
+			display: block;
+		}
+	}
+	.copyright{
+		font-size: 1.2rem;
+		color: #888;
+	}
+}

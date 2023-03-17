@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        @@include('@@webRoot/__include/app-head.html',{ "title": "Project"
+        })
+    </head>
+
+    <body>
+        @@include('@@webRoot/__include/app-a11y.html')
+        <div class="app">
+            @@include('@@webRoot/__include/app-header.html')
+
+            <!-- app-container [s]-->
+            <div class="app-container">
+                <!-- app-content [s] -->
+                <!-- [D] 페이지 클래스 "pg-^" -->
+                <main class="app-content pg-project" tabindex="-1">
+                    <!-- section -->
+					<div class="section project-wrap">
+						<div class="section-tit">
+							<h2>프로젝트</h2>
+							<p class="sub-txt">
+								프로젝트를 선택하시면 상세내용 확인이 가능합니다.
+							</p>
+						</div>
+						<div class="section-cont">
+							<div class="list-head">
+								<div class="total-list">
+									<span>총</span>
+									<span class="data-list-num"></span>
+									<span>개</span>
+								</div>
+								<div class="list-type">
+									<a href="javascript:;" class="btn-list"><i class="icon-list"></i></a>
+									<a href="javascript:;" class="btn-card"><i class="icon-card"></i></a>
+								</div>
+							</div>
+							<div class="project-list type-card">
+								<ul>
+									<li>
+										<a href="javascript:;" class="js-layer-open" data-layer-name="atomy" >
+											<p class="project-type">구축</p>
+											<p class="project-name">애터미 쇼핑몰 개편</p>
+											<p class="project-date">2022.01 ~ 2023.02</p>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:;" class="js-layer-open"   data-layer-name="glovis">
+											<p class="project-type">구축</p>
+											<p class="project-name">현대글로비스 온라인 수출 플랫폼 구축</p>
+											<p class="project-date">2021.08 ~ 2022.01</p>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:;" class="js-layer-open"   data-layer-name="kbarchive">
+											<p class="project-type">구축</p>
+											<p class="project-name">KB금융그룹(지주)의 디지털 아카이브 건</p>
+											<p class="project-date">2021.06 ~ 2021.08</p>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:;" class="js-layer-open"   data-layer-name="serveoneRenewal">
+											<p class="project-type">구축</p>
+											<p class="project-name">2021 서브원 리뉴얼</p>
+											<p class="project-date">2021.04 ~ 2021.06</p>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:;" class="js-layer-open"   data-layer-name="serveoneSM2021">
+											<p class="project-type type-sm">운영/유지보수</p>
+											<p class="project-name">2021 서브원 유지보수 </p>
+											<p class="project-date">2021.03 ~ 2021.04</p>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:;" class="js-layer-open"   data-layer-name="samsungS">
+											<p class="project-type">구축</p>
+											<p class="project-name">삼성전자서비스구축</p>
+											<p class="project-date">2020.09 ~ 2021.03</p>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:;" class="js-layer-open"   data-layer-name="Lg">
+											<p class="project-type">구축</p>
+											<p class="project-name">LG화학 홍보포탈 -고객불편설문페이지</p>
+											<p class="project-date">2020.09 ~ 2020.09</p>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:;" class="js-layer-open"   data-layer-name="pantos">
+											<p class="project-type type-sm">운영/유지보수</p>
+											<p class="project-name">2020년 판토스 유지보수</p>
+											<p class="project-date">2022.08 ~ 2020.09</p>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:;" class="js-layer-open"   data-layer-name="hos">
+											<p class="project-type">구축</p>
+											<p class="project-name">현대차 싱가포르-호주 온라인 판매시스템구축</p>
+											<p class="project-date">2020.05 ~ 2020.07</p>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:;" class="js-layer-open"   data-layer-name="serveoneSM2020">
+											<p class="project-type">유지보수</p>
+											<p class="project-name">2020년 서브원 유지보수</p>
+											<p class="project-date">2020.03 ~ 2020.04</p>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:;" class="js-layer-open"   data-layer-name="inotion"> 
+											<p class="project-type">구축</p>
+											<p class="project-name">이노션 미디어바잉 옥외미디어 기능개선</p>
+											<p class="project-date">2020.01 ~ 2020.03</p>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:;" class="js-layer-open"   data-layer-name="ezwell">
+											<p class="project-type">구축</p>
+											<p class="project-name">이지웰페어 홈페이지 개편</p>
+											<p class="project-date">2020.01 ~ 2020.1</p>
+										</a>
+									</li>
+								</ul>
+							</div>
+
+						</div>
+					</div>
+                </main>
+                <!-- app-content [e] -->
+            </div>
+            <!-- app-container [e]-->
+            @@include('@@webRoot/__include/app-footer.html')
+        </div>
+		<!-- Layer [s] -->
+		<div class="layer-wrap"> 
+			@@include('@@webRoot/_layer/project.html')
+		</div>
+
+
+        @@include('@@webRoot/__include/common-js.html')
+
+        <!-- Add Library (this page only)-->
+        <script src="@@webRoot/../resources/assets/js/ui.js"></script>
+        <script>
+			// 전체 갯수  
+			var totalNum = $('.project-list > ul').children().length
+			$('.data-list-num').prepend(totalNum)
+			
+			// btn
+			$('.btn-list').on('click', function(){
+				$('.project-list').removeClass('type-card').addClass('type-list')
+        	}); 
+			$('.btn-card').on('click', function(){
+				$('.project-list').removeClass('type-list').addClass('type-card')
+        	}); 
+        </script>
+    </body>
+</html>

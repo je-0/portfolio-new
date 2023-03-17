@@ -1,0 +1,48 @@
+//NotoSansCJK 
+//  국문
+
+@font-face {
+    font-family: "NotoSansCJKkr";
+    font-style: normal;
+    font-weight: 400;
+    src: local("※"),
+        url("../../../resources/common/fonts/NotoSansCJKkr-Regular.woff")
+            format("woff");
+}
+@font-face {
+    font-family: "NotoSansCJKkr";
+    font-style: normal;
+    font-weight: 500;
+    src: local("※"),
+        url("../../../resources/common/fonts/NotoSansCJKkr-Medium.woff")
+            format("woff");
+}
+
+//NotoSans 
+//  영문 
+@font-face {
+    font-family: "NotoSans";
+    font-style: normal;
+    font-weight: 400;
+    src: local("※"),
+        url("../../../resources/common/fonts/NotoSans-Regular.woff")
+            format("woff");
+}
+
+@font-face {
+    font-family: "NotoSans";
+    font-style: normal;
+    font-weight: 500;
+    src: local("※"),
+        url("../../../resources/common/fonts/NotoSans-Medium.woff")
+            format("woff");
+}
+
+@font-face {
+    font-family: "NotoSans";
+    font-style: normal;
+    font-weight: 700;
+    src: local("※"),
+        url("../../../resources/common/fonts/NotoSans-Bold.woff")
+            format("woff");
+}
